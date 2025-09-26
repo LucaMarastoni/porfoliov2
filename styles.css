@@ -39,6 +39,17 @@ img { max-width: 100%; display:block; }
 .accent { color: var(--accent); }
 .link { color: var(--accent); text-decoration: none; border-bottom: 1px solid transparent; }
 .link:hover { border-color: var(--accent); }
+.link--button { background: none; border: 0; padding: 0; font: inherit; color: inherit; cursor: pointer; }
+
+.modal { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; padding: 24px; z-index: 200; }
+.modal[hidden] { display: none; }
+.modal__backdrop { position: absolute; inset: 0; background: rgba(11,15,20,.7); backdrop-filter: blur(4px); }
+.modal__content { position: relative; background: var(--panel); border: 1px solid #1c2330; border-radius: var(--radius); padding: 28px 32px 26px; box-shadow: var(--shadow); max-width: 480px; width: min(100%, 480px); }
+.modal__content:focus-visible { outline: none; box-shadow: var(--focus); }
+.modal__close { position: absolute; top: 12px; right: 12px; background: none; border: 0; color: var(--muted); font-size: 1.25rem; line-height: 1; cursor: pointer; }
+.modal__close:hover { color: var(--accent); }
+
+body.modal-open { overflow: hidden; }
 
 .btn {
   appearance: none; border: 0; background: var(--accent); color: #0a0a0a; font-weight: 600;

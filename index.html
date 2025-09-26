@@ -276,8 +276,19 @@
   <footer class="site-footer">
     <div class="container footer__inner">
       <a class="link" href="#home">Torna su ↑</a>
+      <button class="link link--button" type="button" data-privacy-open>Privacy Policy</button>
     </div>
   </footer>
+
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="privacy-title" hidden data-privacy-modal>
+    <div class="modal__backdrop" data-privacy-close></div>
+    <div class="modal__content" tabindex="-1">
+      <button class="modal__close" type="button" aria-label="Chiudi" data-privacy-close>&times;</button>
+      <h2 id="privacy-title">Privacy Policy</h2>
+      <p>Questo sito non traccia l'attivita degli utenti e non utilizza cookie.</p>
+      <p>Seguendo i link esterni presenti su queste pagine potrebbero applicarsi le policy dei siti di destinazione.</p>
+    </div>
+  </div>
 
   <!-- Schema.org JSON-LD -->
   <script type="application/ld+json">
