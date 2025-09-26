@@ -1,0 +1,303 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Luca Marastoni — IT Systems Student</title>
+  <meta name="description" content="Portfolio di Luca Marastoni, IT Systems Student specializzato in automazione, monitoraggio e sicurezza." />
+  <meta name="theme-color" content="#0b0f14" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Luca Marastoni — IT Systems Student" />
+  <meta property="og:description" content="Automazione del monitoraggio, sviluppo di tool e progetti di cybersecurity." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/cover.png" />
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="#" class="brand">LM.</a>
+      <button class="nav-toggle" aria-label="Apri menù" aria-expanded="false">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+      <nav class="nav-links" data-nav>
+        <a href="#about">Chi sono</a>
+        <a href="#skills">Competenze</a>
+        <a href="#projects">Progetti</a>
+        <a href="#experience">Percorso</a>
+        <a href="#contact" class="btn btn--sm">Contatti</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero container" id="home">
+      <div class="hero__content">
+        <h1 class="hero__title"><span class="accent">Luca Marastoni</span></h1>
+        <p class="hero__subtitle">IT Systems Student • Monitoraggio • Automazione • Sicurezza</p>
+        <div class="hero__cta">
+          <a href="#contact" class="btn">Contattami</a>
+        </div>
+        <ul class="badges">
+          <li class="badge">Monitoraggio</li>
+          <li class="badge">Automazione</li>
+          <li class="badge">Cybersecurity</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section container">
+      <h2 class="section__title">Chi sono</h2>
+      <div class="grid two">
+        <div class="card" data-reveal>
+          <p>
+            Sono uno <strong>studente IT Systems</strong> con competenze che spaziano tra sviluppo, amministrazione e cybersecurity. Attualmente mi concentro sull’automazione del monitoraggio Kubernetes, curando la raccolta delle metriche, la creazione di dashboard operative e la definizione di processi di alerting a supporto dei team on-call. In passato ho sviluppato soluzioni tecniche per diversi contesti industriali.
+          </p>
+          <p>
+            Il mio percorso <strong>ITS System Administrator</strong> approfondisce infrastrutture cloud, pratiche DevOps e sicurezza operativa. Porto avanti i progetti documentando procedure e condividendo conoscenze in modo chiaro e strutturato, includendo attività di penetration testing mirate per anticipare le vulnerabilità e rafforzare le difese.
+          </p>
+        </div>
+        <aside class="card highlights" data-reveal>
+          <h3>In breve</h3>
+          <ul class="list">
+            <li>📊 Monitoraggio delle infrastrutture</li>
+            <li>⚙️ Automazione di pipeline CI/CD e processi operativi</li>
+            <li>🛡️ Cybersecurity applicata a incident response, hardening e penetration testing</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section container">
+      <h2 class="section__title">Competenze</h2>
+      <div class="card" data-reveal>
+        <div class="skills-group">
+          <h3>Development</h3>
+          <div class="chips">
+            <span class="chip">Python</span>
+            <span class="chip">Flask</span>
+            <span class="chip">Bash</span>
+            <span class="chip">SQL</span>
+            <span class="chip">Java</span>
+            <span class="chip">JavaScript</span>
+          </div>
+        </div>
+        <div class="skills-group">
+          <h3>Cloud & Server Administration</h3>
+          <div class="chips">
+            <span class="chip">Docker</span>
+            <span class="chip">Kubernetes</span>
+            <span class="chip">AWS</span>
+            <span class="chip">Proxmox</span>
+            <span class="chip">CI/CD</span>
+          </div>
+        </div>
+        <div class="skills-group">
+          <h3>Tools & Tecnologie</h3>
+          <div class="chips">
+            <span class="chip">BurpSuite</span>
+            <span class="chip">Wireshark</span>
+            <span class="chip">Git</span>
+          </div>
+        </div>
+        <div class="skills-group">
+          <h3>Lingue</h3>
+          <div class="chips">
+            <span class="chip">Italiano (madrelingua)</span>
+            <span class="chip">Inglese C1</span>
+          </div>
+        </div>
+        <div class="skills-group">
+          <h3>Soft Skills</h3>
+          <div class="chips">
+            <span class="chip">Proattività</span>
+            <span class="chip">Lavoro di squadra</span>
+            <span class="chip">Puntualità</span>
+            <span class="chip">Organizzazione</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section container">
+      <h2 class="section__title">Progetti</h2>
+      <div class="grid three">
+        <article class="card project" data-reveal>
+          <div class="project__head">
+            <h3>ITS Cybergames</h3>
+            <span class="pill">1° posto nazionale</span>
+          </div>
+          <p>Membro del team vincitore nella competizione nazionale di cybersecurity tra ITS italiani, con focus su analisi, difesa e risposta rapida agli incidenti.</p>
+          <div class="project__foot">
+            <a class="link" href="#" aria-disabled="true">Highlight</a>
+          </div>
+        </article>
+        <article class="card project" data-reveal>
+          <div class="project__head">
+            <h3>CVE Detector</h3>
+            <span class="pill">Python • Nagios</span>
+          </div>
+          <p>Tool Python che monitora in automatico le nuove CVE e genera output compatibile con Nagios per notifiche tempestive.</p>
+          <div class="project__foot">
+            <a class="link" href="#" aria-disabled="true">Repos in arrivo</a>
+          </div>
+        </article>
+        <article class="card project" data-reveal>
+          <div class="project__head">
+            <h3>Attività freelance</h3>
+            <span class="pill">CRM • Web</span>
+          </div>
+          <p>Sviluppo di un CRM per la ristorazione adottato da più locali e realizzazione di siti web personalizzati per piccole attività.</p>
+          <div class="project__foot">
+            <a class="link" href="#" aria-disabled="true">Repos in arrivo</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE / EDUCATION -->
+    <section id="experience" class="section container">
+      <h2 class="section__title">Percorso</h2>
+      <div class="timeline-block" data-reveal>
+        <h3 class="timeline-block__title">Esperienze professionali</h3>
+        <div class="timeline">
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-content">
+              <h3 class="tl-title">Kiratech</h3>
+              <p class="muted">IT Systems Student • 2025 – in corso</p>
+              <p>Automazione del monitoraggio dei cluster Kubernetes con dashboard e alerting per garantire visibilità costante e risposta rapida agli incidenti.</p>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-content">
+              <h3 class="tl-title">Delta Erre</h3>
+              <p class="muted">Tecnico elettronico • 2022 – 2024</p>
+              <p>Azienda del settore antincendio: assemblaggio e programmazione di componenti elettronici, con attenzione alla qualità del prodotto.</p>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-content">
+              <h3 class="tl-title">SCS Survey Cad System</h3>
+              <p class="muted">Tecnico elettronico / Dev C++ • 2021 – 2022</p>
+              <p>Supporto all'automazione in ambito agricolo, con sviluppo C++ e attività operative sui sistemi elettronici.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-block" data-reveal>
+        <h3 class="timeline-block__title">Formazione</h3>
+        <div class="timeline">
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-content">
+              <h3 class="tl-title">ITS — System Administrator</h3>
+              <p class="muted">Formazione • 2024 – in corso</p>
+              <p>Percorso specialistico su amministrazione di sistemi, automazione e sicurezza delle infrastrutture.</p>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-content">
+              <h3 class="tl-title">IFTS — System Administrator</h3>
+              <p class="muted">Formazione • 2023 – 2024</p>
+              <p>Approfondimento pratico su gestione server, virtualizzazione e servizi cloud.</p>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-content">
+              <h3 class="tl-title">Enaip Veneto — Informatica</h3>
+              <p class="muted">Diploma • 2017 – 2021</p>
+              <p>Percorso informatico con focus su reti, sistemi e project work finale orientato alla sicurezza.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section container">
+      <h2 class="section__title">Contatti</h2>
+      <div class="card contact-card" data-reveal>
+        <p class="contact-card__subtitle">Disponibile per progetti IT, collaborazioni e opportunità di confronto.</p>
+        <div class="contact-card__items">
+          <a class="contact-item" href="mailto:marastoni311@gmail.com" aria-label="Invia una email a Luca Marastoni">
+            <span class="contact-item__icon">📧</span>
+            <div>
+              <span class="contact-item__label">Email</span>
+              <span class="contact-item__value">marastoni311@gmail.com</span>
+            </div>
+          </a>
+          <a class="contact-item" href="tel:+393486646762" aria-label="Chiama Luca Marastoni">
+            <span class="contact-item__icon">📞</span>
+            <div>
+              <span class="contact-item__label">Telefono</span>
+              <span class="contact-item__value">+39 348 664 6762</span>
+            </div>
+          </a>
+          <div class="contact-item" aria-label="Località di Luca Marastoni">
+            <span class="contact-item__icon">📍</span>
+            <div>
+              <span class="contact-item__label">Based</span>
+              <span class="contact-item__value">Verona, Italia</span>
+            </div>
+          </div>
+          <a class="contact-item" href="https://www.linkedin.com/in/luca-marastoni-387329304" target="_blank" rel="noopener" aria-label="Profilo LinkedIn di Luca Marastoni">
+            <span class="contact-item__icon">🔗</span>
+            <div>
+              <span class="contact-item__label">LinkedIn</span>
+              <span class="contact-item__value">linkedin.com/in/luca-marastoni-387329304</span>
+            </div>
+          </a>
+          <a class="contact-item" href="https://github.com/LucaMarastoni" target="_blank" rel="noopener" aria-label="Profilo GitHub di Luca Marastoni">
+            <span class="contact-item__icon">💻</span>
+            <div>
+              <span class="contact-item__label">GitHub</span>
+              <span class="contact-item__value">github.com/LucaMarastoni</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <a class="link" href="#home">Torna su ↑</a>
+    </div>
+  </footer>
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Luca Marastoni",
+    "jobTitle": "IT Systems Student",
+    "address": {"@type":"PostalAddress","addressLocality":"Verona","addressCountry":"IT"},
+    "alumniOf": ["ITS — System Administrator","IFTS — System Administrator","Enaip Veneto"],
+    "knowsAbout": ["Automazione","Cybersecurity","Docker","Kubernetes","Python","Git","AWS"],
+    "email": "mailto:marastoni311@gmail.com",
+    "telephone": "+39 348 6646762",
+    "sameAs": [
+      "https://www.linkedin.com/in/luca-marastoni-387329304",
+      "https://github.com/LucaMarastoni"
+    ]
+  }
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>
